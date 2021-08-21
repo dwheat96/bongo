@@ -3,15 +3,18 @@ import './Header.css'
 import logo from './bongo-white.png'
 import SearchIcon from '@material-ui/icons/Search';
 import { ShoppingBasket } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <div className="header">
+            <Link to='/'>
             <img 
             className="header_logo"
             src={logo}
             alt="bongo logo"
             />
+            </Link>
         <div
         className="header_search">
             <input 
@@ -45,14 +48,15 @@ function Header() {
                     Prime
                 </span>
             </div>
-
-            <div className="header_optionBasket">
-                <ShoppingBasket />
-                <span
-                className="header_optionLineTwo header_basketCount">
-                0
-                </span>
-            </div>
+            <Link to='/Checkout'>
+                <div className="header_optionBasket">
+                    <ShoppingBasket />
+                    <span
+                    className="header_optionLineTwo header_basketCount">
+                    0
+                    </span>
+                </div>
+            </Link>
         </div>
     </div>
     )
