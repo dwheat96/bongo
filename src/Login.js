@@ -1,13 +1,35 @@
 import React, { useState } from 'react'
 import './Login.css'
 import logo from './bongo-black.png'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import { auth } from './firebase'
 
 function Login() {
+    const history = useHistory();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const signIn = e =>
+    const signIn = e => {
+        e.preventDefault();
+        auth.signInWithEmailAndPassword(email, password)
+        .then((auth) => {
+            if (auth){
+                history.push('/')
+            }
+        })
+        .catch(error => alert(error.message))
+    }
+
+    const register = e => {
+        e.preventDefault();
+        auth.createUserWithEmailAndPassword(email, password)
+        .then((auth) => {
+            if (auth){
+                history.push('/')
+            }
+        })
+        .catch(error => alert(error.message))
+    }
 
 
     return (
@@ -26,19 +48,17 @@ function Login() {
                     <h5>Email</h5>
                     <input 
                         type="text" 
-                        placeholder="Enter your email" 
                         value={email}
                         onChange = {e => setEmail(e.target.value)}
                     />
                     <h5>Password</h5>
                     <input 
-                        type="password" 
-                        placeholder="Enter your password" 
-                        value={password}
-                        onchange={e => setPassword(e.target.value)}
+                        type='password' 
+                        value={password} 
+                        onChange={e => setPassword(e.target.value)} 
                     />
                     <button 
-                        onlick={ signIn }
+                        onClick={ signIn }
                         className="login_signInButton"
                         type='submit'
                     >
@@ -50,7 +70,10 @@ function Login() {
                     see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
                 </p>
 
-                <button className="login_registerButton">
+                <button 
+                    onClick={ register }
+                    className="login_registerButton"
+                >
                     Create your Bongo Account
                 </button>
             </div>
