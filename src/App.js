@@ -7,7 +7,7 @@ import Login from './Login';
 import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
 import Payment from './Payment'
-import OrderHistory from './OrderHistory'
+import Orders from './Orders'
 import Prime from './Prime'
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
@@ -54,9 +54,9 @@ const App = () => {
           </Elements>
         </Route>
 
-        <Route path="/orderhistory">
+        <Route path="/orders">
           <Header />  
-          <OrderHistory />
+          <Orders />
         </Route>
 
         <Route path="/prime">
