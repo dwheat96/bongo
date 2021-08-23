@@ -55,9 +55,9 @@ const App = () => {
         </Route>
 
         <Route path="/orders">
-          <Header />  
-          <Orders />
-        </Route>
+            <Header />
+            <Orders />
+          </Route>
 
         <Route path="/prime">
           <Header />

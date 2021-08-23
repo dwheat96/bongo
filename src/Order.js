@@ -1,3 +1,4 @@
+  
 import React from 'react'
 import './Order.css'
 import moment from "moment";
@@ -24,7 +25,7 @@ function Order({ order }) {
             ))}
             <CurrencyFormat
                 renderText={(value) => (
-                    <h3 className="order__total">Order Total: {value}</h3>
+                    <h3 className="order_total">Order Total: {value}</h3>
                 )}
                 decimalScale={2}
                 value={order.data.amount / 100}

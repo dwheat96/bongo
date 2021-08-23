@@ -13,7 +13,7 @@ function Orders() {
         db
         .collection('users')
         .doc(user?.uid)
-        .collection('orders')
+        .collection('order')
         .orderBy('created', 'desc')
         .onSnapshot(snapshot => (
             setOrders(snapshot.docs.map(doc => ({
@@ -24,14 +24,12 @@ function Orders() {
     } else {
         setOrders([])
     }
-
   }, [user])
 
     return (
         <div className='orders'>
             <h1>Your Orders</h1>
-
-            <div className='orders__order'>
+            <div className='orders_order'>
                 {orders?.map(order => (
                     <Order order={order} />
                 ))}
