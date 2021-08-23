@@ -1,5 +1,6 @@
 {
     "emmet.includeLanguages": {
        "javascript": "javascriptreact"
-    }
+    },
+    "terminal.integrated.automationShell.windows": ["-ExecutionPolicy", "Bypass"]
  }
