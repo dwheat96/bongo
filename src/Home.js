@@ -6,10 +6,14 @@ function Home() {
     return (
         <div className="home">
             <div className="home_container">
+                {/* TODO: MAKE THIS A CAROUSEL TO MATCH IRL AMAZON */}
+                {/* https://github.com/brainhubeu/react-carousel */}
                 <img 
                 className="home_image"
-                src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220.jpg" 
+                src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/merch/2021/Other/RB-4451_SVOD_PD21_SellTest/GW-PV-DesktopTallHero_RB-4451_SVOD_TWAR_SellTest_Wave2_Settled_opt2_3000x1200._CB665601037_.jpg" 
                 alt="prime video background" />
+
+                {/* TODO: GIVE PRODUCTS AN ONHOVER EFFECT */}
 
                 <div className="home_row">
                     <Product 

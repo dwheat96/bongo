@@ -17,10 +17,14 @@ function Checkout() {
                 alt="checkout ad" 
                 className="checkout_ad" />
                 <div>
-                    <h3>Hello, {user?.email}!</h3>
+                    {user ? <h3>Hello, {user?.email}!</h3> : null}
+                    
                     <h2 className="checkout_title">
                         Your Shopping Basket:
                     </h2>
+
+                    {/* TODO: ADD BASKET ANIMATION */}
+                    {/* https://github.com/reactjs/react-transition-group */}
                     
                 {basket.map(item => (
                     <CheckoutProduct 
