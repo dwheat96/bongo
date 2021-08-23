@@ -1,0 +1,30 @@
+.prime_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prime_image {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  object-fit: contain;
+  width: 30%;
+}
+
+.prime_container > h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.prime_container > button {
+  background: #f0c14b;
+  border-radius: 2px;
+  width: 30%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  font-size: 45;
+}

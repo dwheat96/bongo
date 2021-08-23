@@ -8,6 +8,7 @@ import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
 import Payment from './Payment'
 import OrderHistory from './OrderHistory'
+import Prime from './Prime'
 
 const App = () => {
   const [{}, dispatch] = useStateValue();
@@ -50,6 +51,11 @@ const App = () => {
         <Route path="/orderhistory">
           <Header />  
           <OrderHistory />
+        </Route>
+
+        <Route path="/prime">
+          <Header />
+          <Prime />
         </Route>
 
         <Route path="/">

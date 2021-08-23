@@ -46,6 +46,7 @@ function Header() {
                     </span>
                 </div>
             </Link>
+            <Link to="/orderhistory">
             <div className="header_option">
                 <span className="header_optionLineOne">
                     Returns
@@ -54,6 +55,8 @@ function Header() {
                     & Orders
                 </span>
             </div>
+            </Link>
+            <Link to="/prime">
             <div className="header_option">
                 <span className="header_optionLineOne">
                     Your
@@ -62,6 +65,7 @@ function Header() {
                     Prime
                 </span>
             </div>
+            </Link>
             <Link to='/Checkout'>
                 <div className="header_optionBasket">
                     <ShoppingBasket />
