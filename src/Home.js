@@ -1,4 +1,5 @@
 import React from 'react'
+import MyCarousel from './Carousel'
 import './Home.css'
 import Product from './Product'
 
@@ -12,6 +13,7 @@ function Home() {
                 className="home_image"
                 src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/merch/2021/Other/RB-4451_SVOD_PD21_SellTest/GW-PV-DesktopTallHero_RB-4451_SVOD_TWAR_SellTest_Wave2_Settled_opt2_3000x1200._CB665601037_.jpg" 
                 alt="prime video background" />
+
 
                 {/* TODO: GIVE PRODUCTS AN ONHOVER EFFECT */}
 
