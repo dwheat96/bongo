@@ -30,7 +30,8 @@
 
 .payment_address,
 .payment_items,
-.payment_details {
+.payment_details,
+.disclaimer_container {
   flex: 0.8;
 }
 
@@ -52,4 +53,12 @@
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
+}
+
+.disclaimer_container {
+  max-width: 400px;
+}
+
+.card_info{
+  margin-left: 40px;
 }

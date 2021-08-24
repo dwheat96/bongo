@@ -139,6 +139,31 @@ function Payment() {
                         </form>
                     </div>
                 </div>
+                <div className="payment_section">
+                <div className="payment_title">
+                    <h3>Disclaimer Info</h3>
+                </div>
+                <div className="disclaimer_container">
+                        <p>
+                        This demo utilizes the Stripe Payment API in test mode. PLEASE do not add your actual card info into the field above. Stripe is in test mode, please use the card info below: </p><br/> 
+                            <div className="card_info">
+                                <strong>card number <br/></strong>
+                                4242 4242 4242 4242 <br/>
+                                <strong>exp. date <br/></strong>
+                                04/24 <br/>
+                                <strong>CSC <br/></strong> 
+                                242  <br/> 
+                                <strong>ZIP Code <br/></strong> 
+                                42424 
+                            </div>
+                            
+                </div>
+                </div>
+            
+            
+            
+            
+                
             </div>
         </div>
     )
