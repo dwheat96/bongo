@@ -1,5 +1,4 @@
 import React from 'react'
-import MyCarousel from './Carousel'
 import './Home.css'
 import Product from './Product'
 
